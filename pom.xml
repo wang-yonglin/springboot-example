@@ -12,6 +12,8 @@
     <description>Demo project for Spring Boot</description>
 
     <modules>
+        <module>webmvc-template-example</module>
+        <module>webflux-template-example</module>
         <module>webmvc-session-example</module>
         <module>webflux-session-example</module>
     </modules>

@@ -11,7 +11,7 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>webflux-session-example</artifactId>
+    <artifactId>webmvc-template-example</artifactId>
 
     <properties>
         <project.build.jdk>1.8</project.build.jdk>
@@ -20,7 +20,7 @@
 
         <spring-boot.version>2.4.13</spring-boot.version>
         <spring-cloud.version>2020.0.6</spring-cloud.version>
-        <spring-session.version>3.4.0</spring-session.version>
+        <spring-session-bom.version>2021.2.3</spring-session-bom.version>
     </properties>
 
     <dependencyManagement>
@@ -45,17 +45,7 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-webflux</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.session</groupId>
-            <artifactId>spring-session-data-redis</artifactId>
-            <version>${spring-session.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.session</groupId>
-            <artifactId>spring-session-core</artifactId>
-            <version>${spring-session.version}</version>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -166,5 +156,4 @@
             </properties>
         </profile>
     </profiles>
-
 </project>
